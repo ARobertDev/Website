@@ -10,6 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async>
   const crate = new Crate({
     server: '378706364895199253',
@@ -168,8 +169,13 @@ Amen
 <div style="padding: 30px; font-size: 30px;">
 Check out our ever expanding, work in progress bible as well!
 </div>
-<div style="padding: 30px;">
-<a class="button" href="https://docs.google.com/document/d/1ZTJQuXZpuVpjBZEtuTmhFlheEWrwqCCA7Zi50Aq8U-4/edit?usp=sharing">Check out our Bible Here</a>
+  <div style="padding: 30px;">
+    <a class="button" title="Check out our Bible Here" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
+      Check out our Bible Here
+    </a>
+  <div id="spoiler" style="display:none">
+    <a class="button" href="https://docs.google.com/document/d/1ZTJQuXZpuVpjBZEtuTmhFlheEWrwqCCA7Zi50Aq8U-4/edit?usp=sharing">Check out our Bible Here</a>
+  </div>
 </div>
 <div style="padding: 30px; font-size: 30px;">
 Praise Be, Elon.
