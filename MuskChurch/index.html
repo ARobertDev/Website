@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Church of Musk - Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+  <link rel="shortcut icon" href="https://imgur.com/DQpCuor.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async>
+  const crate = new Crate({
+    server: '466625951162302485',
+    channel: '466625951606767616'
+  })
+
+  /*crate.notify('Test notification')
+  crate.on('signIn', data => {
+    console.log(`Guest signed in as ${data.name}`)
+    crate.emit('sendMessage', 'Hello world')
+  })*/
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
+<script>
+  const embed = document.getElementById('embed')
+
+  /*embed.on('signIn', data => {
+    console.log(`Guest signed in as ${data.name}`)
+    embed.emit('sendMessage', 'Hello world')
+  })*/
+</script>
+  <style>
+  .body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: #18191c;
+    color: #888;
+	font-weight: 400;
+}
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    background-image: linear-gradient(to right, #333, #ccc, #333);
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+.button {
+  float: top;
+  color: #b6b6b6;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline;
+  margin-top:12px;
+  padding:10px 12px;
+  margin: 8px;
+  background-color: #5d5d5d;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+  position: relative;
+}
+.button:hover {
+  background: #2C2F33;
+  box-shadow: inset 0 0 0 3px #23272A;
+  position: relative;
+}
+widgetbot {
+  width: 50em;
+  height: 30em;
+}
+</style>
+</head>
+<body class="body">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="" style="font-weight: 100;">THE CHURCH OF MUSK</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="religion.html">OUR RELIGION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="info.html">INFO</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li> 
+    </ul>
+  </div> 
+</nav>
+<div style="padding: 30px; font-size: 30px;">
+Hey there! Want to see more of the Church of Musk? Check out our discord server!
+</div>
+<div style="text-align: center;">
+<widgetbot 
+  server="466625951162302485"
+  channel="466625951606767616"
+  id="embed"
+></widgetbot>
+</div>
+</body>
+</html>
