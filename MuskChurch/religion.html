@@ -10,7 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async>
   const crate = new Crate({
     server: '378706364895199253',
@@ -84,17 +83,6 @@ footer {
   color: #99AAB5;
   padding: 35px;
   font-size: 12px;
-}
-.g-recaptcha (
-  display: inline-block;
-}
-.text-xs-center {
-  text-align: center;
-  margin: auto;
-}
-#recaptcha {
-    width: 304px;
-    margin: 0 auto;
 }
 </style>
 </head>
@@ -181,17 +169,10 @@ Amen
 Check out our ever expanding, work in progress bible as well!
 </div>
   <div style="padding: 30px;">
-    <a class="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
-      Check out our Bible Here
+    <a class="button" href="https://docs.google.com/document/d/1ZTJQuXZpuVpjBZEtuTmhFlheEWrwqCCA7Zi50Aq8U-4/edit?usp=sharing">
+      Click Here
     </a>
-  <div id="spoiler" class="text-xs-center" style="display:none;">
-    <div align="center" class="text-xs-center" id="recaptcha">
-      <div class="g-recaptcha" data-sitekey="6Ld2K2QUAAAAAEKFZJaodThA-zsO3f7RnjagJhnz" data-theme="dark">
-      </div>
-    </div>
-    <a class="button" href="https://docs.google.com/document/d/1ZTJQuXZpuVpjBZEtuTmhFlheEWrwqCCA7Zi50Aq8U-4/edit?usp=sharing">Check out our Bible Here</a>
   </div>
-</div>
 <div style="padding: 30px; font-size: 30px;">
 Praise Be, Elon.
 </div>
