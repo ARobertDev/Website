@@ -82,20 +82,50 @@ widgetbot, widgetbot iframe {
 .spoiler {
   display: none;
 }
+.spoiler1 {
+  display: none;
+}
+.spoiler2 {
+  display: none;
+}
 
 .show {
+  display: none;
+}
+.show1 {
+  display: none;
+}
+.show2 {
   display: none;
 }
 
 .hide:target + .show {
   display: inline;
 }
+.hide1:target + .show1 {
+  display: inline;
+}
+.hide2:target + .show2 {
+  display: inline;
+}
 
 .hide:target {
   display: none;
 }
+.hide1:target {
+  display: none;
+}
+.hide2:target {
+  display: none;
+}
 
 .hide:target ~ .spoiler {
+  display: inline;
+}
+.hide1:target ~ .spoiler1 {
+  display: inline;
+}
+.hide2:target ~ .spoiler2 {
   display: inline;
 }
 </style>
@@ -140,10 +170,10 @@ widgetbot, widgetbot iframe {
     </div>
 </div>
 <div class="forum-post">
-    <a href="#hide" class="hide button" id="hide">Show Campaign Story</a>
-    <a href="#show" class="show button" id="show">Hide Campaign Story</a>
-    <div class="spoiler">
-      <p class="spoiler-content">
+    <a href="#hide1" class="hide1 button" id="hide1">Show Campaign Story</a>
+    <a href="#show1" class="show1 button" id="show1">Hide Campaign Story</a>
+    <div class="spoiler1">
+      <p class="spoiler-content1">
         <object data="Player Rules.pdf" type="application/pdf" width="100%" height="90vh" style="height: 90vh; width: 100%;">
         <p>Can't see the file? No problem! Click <a href="Player Rules.pdf">Here!</a></p>
       </object>
@@ -151,10 +181,10 @@ widgetbot, widgetbot iframe {
     </div>
 </div>
 <div class="forum-post">
-    <a href="#hide" class="hide button" id="hide">Show Campaign Story</a>
-    <a href="#show" class="show button" id="show">Hide Campaign Story</a>
-    <div class="spoiler">
-      <p class="spoiler-content">
+    <a href="#hide2" class="hide2 button" id="hide2">Show Campaign Story</a>
+    <a href="#show2" class="show2 button" id="show2">Hide Campaign Story</a>
+    <div class="spoiler2">
+      <p class="spoiler-content2">
         <object data="Campaign Sheet.pdf" type="application/pdf" width="100%" height="90vh" style="height: 90vh; width: 100%;">
         <p>Can't see the file? No problem! Click <a href="Campaign Sheet.pdf">Here!</a></p>
       </object>
