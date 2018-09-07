@@ -80,6 +80,25 @@ widgetbot, widgetbot iframe {
   height: 9vh !important;
   margin: 0 !important;
 }
+.spoiler {
+  display: none;
+}
+
+.show {
+  display: none;
+}
+
+.hide:target + .show {
+  display: inline;
+}
+
+.hide:target {
+  display: none;
+}
+
+.hide:target ~ .spoiler {
+  display: inline;
+}
 </style>
 </head>
 <body class="body">
@@ -110,14 +129,38 @@ widgetbot, widgetbot iframe {
     </ul>
   </div>
 </nav>
-<object data="Campaign Story.pdf" type="application/pdf" width="100%" height="90vh" style="height: 90vh; width: 100%;">
-  <p>Can't see the file? No problem! Click <a href="Campaign Story.pdf">Here!</a></p>
-</object>
-<object data="Player Rules.pdf" type="application/pdf"  width="100%" height="90vh" style="height: 90vh; width: 100%;">
-  <p>Can't see the file? No problem! Click <a href="Player Rules.pdf">Here!</a></p>
-</object>
-<object data="Campaign Sheet.pdf" type="application/pdf"  width="100%" height="90vh" style="height: 90vh; width: 100%;">
-  <p>Can't see the file? No problem! Click <a href="Campaign Sheet.pdf">Here!</a></p>
-</object>
+<div class="forum-post">
+    <a href="#hide" class="hide btn" id="hide">Show spoiler</a>
+    <a href="#show" class="show btn" id="show">Hide spoiler</a>
+    <div class="spoiler">
+      <p class="spoiler-content">
+        <object data="Campaign Story.pdf" type="application/pdf" width="100%" height="90vh" style="height: 90vh; width: 100%;">
+        <p>Can't see the file? No problem! Click <a href="Campaign Story.pdf">Here!</a></p>
+      </object>
+    </p>
+    </div>
+</div>
+<div class="forum-post">
+    <a href="#hide" class="hide btn" id="hide">Show spoiler</a>
+    <a href="#show" class="show btn" id="show">Hide spoiler</a>
+    <div class="spoiler">
+      <p class="spoiler-content">
+        <object data="Player Rules.pdf" type="application/pdf"  width="100%" height="90vh" style="height: 90vh; width: 100%;">
+          <p>Can't see the file? No problem! Click <a href="Player Rules.pdf">Here!</a></p>
+        </object>
+    </p>
+    </div>
+</div>
+<div class="forum-post">
+    <a href="#hide" class="hide btn" id="hide">Show spoiler</a>
+    <a href="#show" class="show btn" id="show">Hide spoiler</a>
+    <div class="spoiler">
+      <p class="spoiler-content">
+        <object data="Campaign Sheet.pdf" type="application/pdf"  width="100%" height="90vh" style="height: 90vh; width: 100%;">
+          <p>Can't see the file? No problem! Click <a href="Campaign Sheet.pdf">Here!</a></p>
+        </object>
+    </p>
+    </div>
+</div>
 </body>
 </html>
